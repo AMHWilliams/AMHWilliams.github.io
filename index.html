@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Marco Huppertz</title>
-        <link href="resources/css/reset.css" rel="reset">
-        <link href="resources/css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <p>Hello World!</p>
-    </body>
+<head>
+    <title>Marco Huppertz</title>
+    <link href="resources/css/reset.css" rel="reset">
+    <link href="resources/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <a href="#header"><h2>Marco Huppertz</h2></a>
+        <nav>
+            <ul class="navigation-items">
+                <li class="navigation-item"><a href="#about-me">About Me</a></li>
+                <li class="navigation-item"><a href="#my-skills">My Skills</a></li>
+                <li class="navigation-item"><a href="#portfolio">Projects</a></li>
+                <li class="navigation-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="banner">
+            <div id="banner-text">
+                <h1>I'M <span id="banner-name">Marco Huppertz</span></h1>
+                <h2>Game Producer & Developer</h2>
+                <button type="button" href="#">Contact Me</button>
+            </div>
+            <div id="banner-image">
+                <img src="resources/images/Profilbildbw.png" alt="Marco Huppertz">
+            </div>
+            <div id="contact-cards">
+                <div id="contact-card-linkedin">
+                    <a href="https://www.linkedin.com/in/marco-huppertz/">Linked-In</a>
+                </div>
+                <div id="contact-card-email">
+                    <a href="mailto:marhup@yahoo.de">E-Mail</a>
+                </div>
+                <div id="contact-card-github">
+                    <a href="https://github.com/AMHWilliams">Github</a>
+                </div>
+            </div>
+        </div>
+        <div id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Experienced Game Producer who works on small software and web projects in his free time. I bring strong organizational and communication 
+                skills to the the table and supplement this with in-depth knowledge in Jira and Jira Adminstration. With basic programming skills, I have 
+                started building my own projects.
+            </p>
+        </div>
+        <div id="my-skills">
+            <h2>My Skills</h2>
+            <div id="skill-container">
+                <div class="skill-card" id="skill-jira">
+                    <img src="resources/images/atlassian_jira_logo_icon_170511-733488740.png" alt="Jira Logo">
+                    <p>Jira</p>
+                </div>
+                <div class="skill-card" id="skill-python">
+                    <img src="resources/images/267_Python-1024-4078983397.png" alt="Python Logo">
+                    <p>Python</p>
+                </div>
+                <div class="skill-card" id="skill-git">
+                    <img src="resources/images/git-icon-icon-md-2954016568.png" alt="Git Source Control Logo">
+                    <p>Git Source Control</p>
+                </div>
+                <div class="skill-card" id="skill-html">
+                    <img src="resources/images/22-1024-1830766936.png" alt="HTML Logo">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card" id="skill-css">
+                    <img src="resources/images/css-icon-12-697624582.png" alt="CSS Logo">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card" id="skill-javascript">
+                    <img src="resources/images/javascript-2752148-2284965-520827111.png" alt="JavaScript Logo">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="portfolio-container">
+                <div class="project-card park-beyond">
+                    <h3>Park Beyond</h3>
+                    <p>
+                        A theme park simulation game!   
+                    </p>
+                    <div class="expand-button">
+                        <p>See More</p>
+                    </div>
+                </div>
+                <div class="project-card-extension park-beyond">
+                    <p>
+                        Park Beyond is a theme park simulation that gives you the freedom to create and manage the parks of your dreams! 
+                        Whether you love to manage finances and visitor experience or just create fun and cozy parks, the game has 
+                        something in store just for you! I worked as Producer on this project.
+                    </p>
+                </div>
+                <div class="project-card" id="pcworld">
+                    <h3>PC World</h3>
+                    <p>
+                        Project in progress. Stay tuned!
+                    </p>
+                    <div class="expand-button">
+                        <p>See More</p>
+                    </div>
+                </div>
+                <div class="project-card-extension pcworld">
+                    <p>
+                        I am working as the main developer on this web-based project. My main motivator for learning full-stack development.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="limiter">
+                <div class="limiter-bar"></div>
+                <div class="limiter-content">
+                    <h2>Contact</h2>
+                </div>
+                <div class="limiter-bar"></div>
+            </div>
+            <div id="contact-container">
+                <div class="contact-card">
+                    <p id="contact-email"><a href="mailto:marhup@yahoo.de">marhup@yahoo.de</a></p>
+                </div>
+                <div class="contact-card">
+                    <p id="contact-phone">+49 151 2092 6964</p>
+                </div>
+                <div class="contact-card">
+                    <p id="contact-location">Frankfurt am Main, Germany</p>
+                </div>
+            </div>
+            <div class="limiter">
+                <div class="limiter-bar"></div>
+                <div class="limiter-content">
+                    <div id="contact-card-linkedin">
+                        <a href="https://www.linkedin.com/in/marco-huppertz/">Linked-In</a>
+                    </div>
+                    <div id="contact-card-email">
+                        <a href="mailto:marhup@yahoo.de">E-Mail</a>
+                    </div>
+                    <div id="contact-card-github">
+                        <a href="https://github.com/AMHWilliams">Github</a>
+                    </div>
+                </div>
+                <div class="limiter-bar"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Thanks for scrolling!</p>
+    </footer>
+</body>
 </html>
