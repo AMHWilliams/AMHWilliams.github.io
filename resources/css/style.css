@@ -1,0 +1,621 @@
+html {
+    font-size: 16px;
+    --zoom-level: normal;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin: 0 auto;
+    background-color: #34353A;
+}
+
+.width-limiter {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, p {
+    color: #FFFFFF;
+}
+
+h2, h3 {
+    font-family: "Playfair Display", serif;
+}
+
+h1, p, button {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2.center {
+    justify-self: center;
+    margin-top: 5rem;
+}
+
+a {
+    font-family: "Source Sans 3", sans-serif;
+    color: #8D8E90;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+    transition: all 0.1s linear;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-card-linkedin::before {
+    content: url(../images/icons8-linkedin-48.png);
+    zoom: 70%;
+    
+}
+
+.contact-card-email::before {
+    content: url(../images/icons8-telegram-app-48.png);
+    zoom: 70%;
+}
+
+.contact-card-github::before {
+    content: url(../images/icons8-github-48.png);
+    zoom: 70%;
+}
+
+/* Circle Elements */
+.circles {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    z-index: -1;
+}
+
+.small-circle {
+    height: 7px;
+    width: 7px;
+    background-color: #FFCC6C;
+    opacity: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.big-circle {
+    height: 9px;
+    width: 9px;
+    background-color: #FFCC6C;
+    opacity: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.circles1 {
+    right: 10rem;
+    margin-top: -10rem;
+    
+}
+
+.circles2 {
+    float: left;
+    margin-top: -5rem;
+    margin-left: -15rem;
+}
+
+/* Header */
+header {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    align-content: center;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+#header, #about-me, #my-skills, #portfolio, #contact {
+    scroll-margin-top: 1rem;
+}
+
+@media only screen and (max-width: 880px) {
+    header {
+        justify-content: space-around;
+    }
+
+    #header-name {
+        display: none;
+    }
+
+    header li:last-child {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    header {
+        width: 90%;
+    }
+}
+
+/* Main */
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Banner */
+#banner {
+    margin-top: 3rem;
+    background-image: url(../images/Profilbildbw.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+#banner-image {
+    flex: 1 1 40%;
+}
+
+#banner-image img {
+    visibility: hidden;
+    max-width: 100%;
+}
+
+#banner-text {
+    padding-right: 1rem;
+    margin-top: 4rem;
+    margin-left: -5rem;
+    flex: 1 2 60%;
+}
+
+#banner-space {
+    letter-spacing: 1.25rem;
+}
+
+#banner-name {
+    font-family: "Playfair Display", serif;
+    color: #FFCC6C;
+    font-size: 3.5rem;
+}
+
+#banner h2 {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+}
+
+#banner-text a {
+    font-size: 1.25rem;
+    color: #FFCC6C;
+    padding: 0.5rem 1rem;
+    border-style: solid;
+    border-color: #FFCC6C;
+    border-radius: 0.5rem;
+}
+
+#banner-text a:hover {
+    background-color: #4A4A4D;
+}
+
+#contact-cards {
+    position: relative;
+    float: left;
+    margin-left: 2rem;
+    margin-top: -40%;
+    z-index: 2;
+}
+
+.vr {
+    height: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-left: 2px solid #FFCC6C;
+}
+
+@media only screen and (max-width: 1200px) {
+    #banner-text {
+        margin-top: 0;
+        margin-left: -2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #banner-space {
+        letter-spacing: 0.5rem;
+    }
+
+    #banner-name {
+        font-size: 2.5rem;
+    }
+
+    .vr {
+        margin-left: 0.75rem;
+    }
+
+    li .contact-card-linkedin:before {
+        content: url(../images/icons8-linkedin-48.png);
+        zoom: 50%;
+    }
+    
+    li .contact-card-email:before {
+        content: url(../images/icons8-telegram-app-48.png);
+        zoom: 50%;
+    }
+    
+    li .contact-card-github:before {
+        content: url(../images/icons8-github-48.png);
+        zoom: 50%;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    #banner {
+        margin-top: 0.5rem;
+    }
+    
+    #banner-name {
+        font-size: 2rem;
+    }
+
+    #banner h2 {
+        font-size: 1.25rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    #banner-text a {
+        font-size: 1rem;
+    }
+
+    #contact-cards {
+        margin-left: 1rem;
+    }
+
+    .vr {
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    #banner-name {
+        font-size: 1.5rem;
+    }
+
+    #banner h2 {
+        font-size: 1.1rem;
+    }
+
+    #banner-text a {
+        padding: 0.25rem 0.5rem;
+    }
+
+    #contact-cards {
+        margin-left: 0;
+    }
+
+    .vr {
+        height: 1rem;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    #banner {
+        background-image: none;
+    }
+    
+    #banner-image {
+        display: none;
+    }
+
+    #banner-text {
+        padding-right: 0;
+        margin-top: 0;
+        margin-left: 0rem;
+    }
+
+    #banner-space {
+        letter-spacing: 0.25rem;
+    }
+
+    h1 {
+        font-size: 100%;
+    }
+
+    #contact-cards {
+        display: none;
+    }
+}
+
+/* About Me */
+#about-me-text {
+    display: flex;
+    justify-content: center;
+}
+
+.hr {
+    min-width: 1rem;
+    width: 5%;
+    margin-right: 0.5rem;
+    margin-top: 0.6rem;
+    border-top: 2px solid #FFCC6C;
+}
+
+p {
+    margin: 0;
+}
+
+/* Skills */
+#skill-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.skill-card {
+    min-width: 15rem;
+    min-height: 15rem;
+    max-width: 15rem;
+    max-width: 15rem;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    background-color: #3D3E42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-card:hover {
+    background-color: #FFCC6C;
+    transition: all 0.2s linear;
+}
+
+.skill-card img {
+    max-width: 4rem;
+    max-height: 4rem;
+    margin: 1.5rem auto;
+}
+
+.skill-card p {
+    margin: 1.5rem auto;
+}
+
+/* Portfolio */
+#portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    min-height: 15rem;
+    max-height: 15rem;
+    margin-top: 2rem;
+    flex-basis: 100%;
+    content-visibility: hidden;
+}
+
+.mobile-no-hover {
+    display: inline-block;
+}
+
+@media (hover: hover) {
+    .project-card .overlay {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(52, 53, 58, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-card:hover {
+        transition: all 0.2s linear;
+        content-visibility: visible;
+    }
+    
+    .see-more {
+        margin-top: 1rem;
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        width: 8rem;
+        background-color: #FFCC6C;
+        color: #34353A;
+        font-weight: bold;
+        font-size: 0.9rem;
+        transition: padding 0.5s;
+    }
+    
+    .see-more:hover {
+        cursor: pointer;
+    }
+    
+    .see-more span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .see-more span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -1rem;
+        transition: 0.5s;
+    }
+    
+    .see-more:hover span {
+        padding-right: 1rem;
+    }
+    
+    .see-more:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    
+    .see-more:active {
+        background-color: #FFDDA5;
+    }
+    
+    .project-card-extension {
+        transition: height 1s ease-out;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .mobile-no-hover {
+        display: none;
+    }
+}
+
+.project-card.park-beyond {
+    background-image: url(../images/Park_Beyond_Key_Art_2-1068x526-3888555310.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+    background-position-x: center;
+}
+
+.project-card.pcworld {
+    background-image: url(../images/pexels-igor-starkov-233202-1117452.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 90%;
+    background-position-x: center;
+}
+
+/* Contact */
+#contact {
+    background-color: #3D3E42;
+    margin-top: 4rem;
+}
+
+.limiter {
+    display: flex;
+    justify-content: center;
+}
+
+.limiter-bar {
+    border-top: 2px solid #FFCC6C;
+    width: 80%;
+}
+
+.limiter-content-top {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -3.25rem;
+}
+
+.limiter-content-bottom {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -1rem;
+}
+
+.contact-cards-horizontal {
+    display: inline-flex;
+}
+
+.contact-cards-horizontal div {
+    margin: 0 0.5rem;
+}
+
+#contact-container {
+    width: 50%;
+    display: flex;
+    padding: 3rem 0;
+    margin: -3rem auto 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background-color: #31333B;
+    border-radius: .5rem;
+    margin: .75rem .5rem;
+    min-width: 19rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.contact-card a {
+    color: #FFCC6C;
+    transition: all 0.1s linear;
+    vertical-align: middle;
+
+}
+
+.contact-card a:hover {
+    color: #FFFFFF;
+    transition: all 0.1s linear;
+}
+
+#contact-email::before {
+    content: url(../images/icons8-email-50.png);
+    zoom: 50%;
+    padding-right: 1rem;
+    vertical-align: -30%;
+}
+
+#contact-phone::before {
+    content: url(../images/icons8-phone-50.png);
+    zoom: 50%;
+    padding-right: 1rem;
+    vertical-align: -30%;
+}
+
+#contact-location::before {
+    content: url(../images/icons8-location-50.png);
+    zoom: 50%;
+    padding-right: 1rem;
+    vertical-align: -30%;
+}
+
+
+
+#page-ender {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: #FFCC6C;
+    width: 100%;
+    margin: 4rem auto;
+    text-align: center;    
+}
