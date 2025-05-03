@@ -2,7 +2,7 @@
 
 const projectButtons = document.getElementsByClassName('see-more');
 
-const slideDown = elem => elem.style.height = `4.5rem`;
+const slideDown = elem => elem.style.height = `${elem.scrollHeight}px`;
 
 const slideUp = elem => elem.style.height = '0';
 

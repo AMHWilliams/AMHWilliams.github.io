@@ -126,17 +126,24 @@ ul {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #8D8E90;
-    color: white;
-    text-align: center;
+    background-color: #3D3E42;
+    border: 2px solid #8D8E90;
+    color: #FFFFFF;
     cursor: pointer;
     padding: 1rem;
-    border-radius: 0.4rem;
+    border-radius: 50%;
     font-size: 1rem;
+}
+
+#to-top-button:hover {
+    background-color: #4A4A4D;
 }
 
 #to-top-button span:after {
     content: "\290A";
+    position: relative;
+    bottom: 0.25rem;
+    
 }
   
 @media only screen and (max-width: 1200px) {
@@ -467,7 +474,7 @@ p {
 .project-card {
     min-height: 15rem;
     max-height: 15rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     flex-basis: 100%;
     content-visibility: hidden;
