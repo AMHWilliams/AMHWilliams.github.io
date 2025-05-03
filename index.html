@@ -1,10 +1,192 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+    <title>Marco Huppertz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link href="resources/css/reset.css" rel="reset">
+    <link href="resources/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
 <body>
-  <h1>AMHWilliams</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <div class="width-limiter">
+        <header id="header">
+            <a id="header-name" href="#header"><h2>Marco Huppertz</h2></a>
+            <nav>
+                <ul class="navigation-items">
+                    <li class="navigation-item"><a href="#about-me">About Me</a></li>
+                    <li class="navigation-item"><a href="#my-skills">My Skills</a></li>
+                    <li class="navigation-item"><a href="#portfolio">Projects</a></li>
+                    <li class="navigation-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="banner">
+                <div class="banner-child" id="banner-image">
+                    <img src="resources/images/Profilbildbw.png">
+                </div>
+                <div class="banner-child" id="banner-text">
+                    <h1>I'M<span id="banner-space"> </span><span id="banner-name">Marco Huppertz</span></h1>
+                    <h2>Game Producer & Developer</h2>
+                    <a href="#contact">Contact Me</a>
+                </div>
+            </div>
+            <ul id="contact-cards">
+                <li class="vr"></li>
+                <li><a href="https://www.linkedin.com/in/marco-huppertz/" target="_blank" class="contact-card-linkedin"></a></li>
+                <li><a href="mailto:marhup@yahoo.de" target="_blank" class="contact-card-email"></a></li>
+                <li><a href="https://github.com/AMHWilliams" target="_blank" class="contact-card-github"></a></li>
+            </ul>
+            <div id="about-me">
+                <h2>About Me</h2>
+                <div id="about-me-text">
+                    <div class="hr"></div>
+                    <p>
+                        Experienced Game Producer who works on small software and web projects in his free time. I bring strong organizational and communication 
+                        skills to the the table and supplement this with in-depth knowledge in Jira and Jira Adminstration. With basic programming skills, I have 
+                        started building my own projects.
+                    </p>
+                </div>
+            </div>
+            <div id="my-skills">
+                <h2 class="center">My Skills</h2>
+                <div id="skill-container">
+                    <div class="skill-card" id="skill-jira">
+                        <img src="resources/images/atlassian_jira_logo_icon_170511-733488740.png" alt="Jira Logo">
+                        <p>Jira</p>
+                    </div>
+                    <div class="skill-card" id="skill-python">
+                        <img src="resources/images/267_Python-1024-4078983397.png" alt="Python Logo">
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-card" id="skill-git">
+                        <img src="resources/images/git-icon-icon-md-2954016568.png" alt="Git Source Control Logo">
+                        <p>Git Source Control</p>
+                    </div>
+                    <div class="skill-card" id="skill-html">
+                        <img src="resources/images/22-1024-1830766936.png" alt="HTML Logo">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-card" id="skill-css">
+                        <img src="resources/images/css-icon-12-697624582.png" alt="CSS Logo">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-card" id="skill-javascript">
+                        <img src="resources/images/javascript-2752148-2284965-520827111.png" alt="JavaScript Logo">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="circles circles1">
+                    <span class="small-circle"></span>
+                    <span class="big-circle"></span>
+                    <span class="big-circle"></span>
+                    <span class="big-circle"></span>
+                    <span class="small-circle"></span>
+                    <span class="small-circle"></span>
+                    <span class="small-circle"></span>
+                    <span class="small-circle"></span>
+                    <span class="small-circle"></span>
+                    <span class="big-circle"></span>
+                    <span class="small-circle"></span>
+                    <span class="big-circle"></span>
+                </div>
+            </div>
+            <div id="portfolio">
+                <h2 class="center">Portfolio</h2>
+                <div id="portfolio-container">
+                    <div class="project-card park-beyond">
+                        <div class="overlay">
+                            <h3>Park Beyond</h3>
+                            <p>
+                                A theme park simulation game!   
+                            </p>
+                            <button type="button" class="see-more park-beyond"><span>See More </span></button>
+                        </div>
+                    </div>
+                    <div class="project-card-extension park-beyond">
+                        <h3 class="mobile-no-hover">Park Beyond</h3>
+                        <p>
+                            Park Beyond is a theme park simulation that gives you the freedom to create and manage the parks of your dreams! 
+                            Whether you love to manage finances and visitor experience or just create fun and cozy parks, the game has 
+                            something in store just for you! I worked as Producer on this project.
+                        </p>
+                    </div>
+                    <div class="project-card pcworld">
+                        <div class="overlay">
+                            <h3>PC World</h3>
+                            <p>
+                                Project in progress. Stay tuned!
+                            </p>
+                            <button type="button" class="see-more pcworld"><span>See More </span></button>
+                        </div>
+                    </div>
+                    <div class="project-card-extension pcworld">
+                        <h3 class="mobile-no-hover">PC World</h3>
+                        <p>
+                            I am working as the main developer on this web-based project. My main motivator for learning full-stack development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="circles circles2">
+                <span class="small-circle"></span>
+                <span class="big-circle"></span>
+                <span class="big-circle"></span>
+                <span class="big-circle"></span>
+                <span class="small-circle"></span>
+                <span class="small-circle"></span>
+                <span class="small-circle"></span>
+                <span class="small-circle"></span>
+                <span class="small-circle"></span>
+                <span class="big-circle"></span>
+                <span class="small-circle"></span>
+                <span class="big-circle"></span>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div id="contact">
+            <div class="limiter">
+                <div class="limiter-bar"></div>
+                <div class="limiter-content-top">
+                    <h2>Contact</h2>
+                </div>
+                <div class="limiter-bar"></div>
+            </div>
+            <div id="contact-container">
+                <div class="contact-card">
+                    <a id="contact-email" href="mailto:marhup@yahoo.de">marhup@yahoo.de</a>
+                </div>
+                <div class="contact-card">
+                    <span id="contact-phone"><a href="tel:#+4915120926964">+49 151 2092 6964</a></span>
+                </div>
+                <div class="contact-card">
+                    <span id="contact-location"><a href="https://maps.app.goo.gl/PKobMcLxPN68VcgS6" target="_blank">Frankfurt am Main, Germany</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="limiter">
+            <div class="limiter-bar"></div>
+            <div class="limiter-content-bottom">
+                <div class="contact-cards-horizontal">
+                    <div id="contact-card-linkedin">
+                        <a href="https://www.linkedin.com/in/marco-huppertz/" target="_blank" class="contact-card-linkedin"></a>
+                    </div>
+                    <div id="contact-card-email">
+                        <a href="mailto:marhup@yahoo.de" class="contact-card-email"></a>
+                    </div>
+                    <div id="contact-card-github">
+                        <a href="https://github.com/AMHWilliams" target="_blank" class="contact-card-github"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="limiter-bar"></div>
+        </div>
+        <p id="page-ender">Thanks for scrolling!</p>
+        <button onclick="topFunction()" id="to-top-button"><span></span></button> 
+    </footer>
+    <script  src="./resources/javascript/script.js"></script>
 </body>
-
 </html>
